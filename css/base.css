@@ -1,0 +1,265 @@
+body{
+	/*background-image: url(../images/back1.jpg);*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.container{
+	margin-top: 100px;
+}
+.title{
+	background-color: rgba(255,255,255,0.3);
+}
+
+.title-image{
+  padding-bottom: 15px;
+  height: 180px;
+}
+
+.first-title{
+  animation-name: firstTitle;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.second-title{
+  animation-name: secondTitle;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title-image a{
+   margin-left: 490px;
+}
+
+.title-image img{
+   width: 180px;
+   height: 180px;
+   border-radius: 100px;
+   margin: 15px 10px 0px 10px;
+   border: 10px solid rgba(148,48,0,0.56);
+
+}
+
+.title-image .first{
+  animation-name: myfirst;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title-image .second{
+  animation-name: mysecond;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title-image .first img{
+  animation-name: firstImg;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.title-image .second img{
+  animation-name: secondImg;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes firstTitle
+{
+0%   {width: 0px;background-color: rgba(0,0,0,0.2)}
+50%  {width: 0px;background-color: rgba(0,0,0,0.2)}
+75%  {width: 550px;background-color: rgba(0,0,0,0.2)}
+100% {width: 1170px;background-color: rgba(0,0,0,0.2)}
+}
+@keyframes secondTitle
+{
+0%   {width: 1170px;background-color: rgba(0,0,0,0.2)}
+75%  {width: 550px;background-color: rgba(0,0,0,0.2)}
+100% {width: 0px;background-color: rgba(0,0,0,0.2)}
+}
+
+@keyframes myfirst
+{
+0%   {margin-left: 490px}
+25%  {margin-left: 490px}
+50%  {margin-left: 490px}
+100% {margin-left: 200px}
+}
+
+@keyframes mysecond
+{
+0%   {margin-left: 200px}
+50%  {margin-left: 490px}
+75%  {margin-left: 490px}
+100% {margin-left: 490px}
+}
+
+@keyframes firstImg
+{
+0%   {width: 180px;height: 180px;}
+25%  {width: 150px;height: 150px;}
+50%  {width: 150px;height: 150px;}
+100% {width: 150px;height: 150px;}
+}
+
+@keyframes secondImg
+{
+0%   {width: 150px;height: 150px;}
+50%  {width: 150px;height: 150px;}
+75%  {width: 150px;height: 150px;}
+100% {width: 180px;height: 180px;}
+}
+
+.type-it-1{
+	font-size: 22px;
+	font-weight: bold;
+  color: #fff;
+  font-family: "Microsoft YaHei",montserrat;
+}
+.type-it-2{
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+  font-family: "Microsoft YaHei",montserrat;
+}
+.ti-container{
+  margin: 20px 0px !important;
+}
+.introduce a{
+  text-decoration: none;
+  color: #40A9F6;
+}
+
+.introduce a:hover{
+  text-decoration: none;
+  color: #4fc1e9;
+}
+
+.title-content{
+	margin-top: 15px;
+}
+.word-title{
+	font-size: 22px;
+	font-weight: bold;
+	color: #000;
+	border: 3px dotted #C42C41;
+}
+.ti-container{
+	margin: 10px 0px;
+}
+
+.blank{
+	width: 100%;
+	height: 50px;
+}
+
+
+
+/*照片旋转样式*/
+/*添加一些基础样式*/
+.artGroup {
+  display: block;
+  width: 360px;
+  height: 210px;
+  position: relative;
+  /*margin: 0 10px 10px 10px;*/
+  float: left;
+}
+
+.artwork {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.artGroup img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  border: 1px solid #333;
+}
+
+.artGroup .detail {
+  display: block;
+  background: rgba(255,255,255,0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.artGroup .detail h3 {
+  text-align: center;
+  color: #F74B06;
+  font-weight: bold;
+}
+
+.artGroup .detal-box {
+  	width: 300px;
+  	height: 150px;
+  	margin-left: 30px;
+}
+.detal-box ul{
+	list-style: none;
+}
+
+.detal-box li{
+	margin-bottom: 5px;
+}
+
+.detal-box li a{
+	text-decoration: none;
+	color: #000;
+}
+
+.detal-box li a:hover{
+	text-decoration: none;
+	color: #4fc1e9;
+}
+
+.detal-box .more{
+	margin-left: 210px;
+}
+
+.artGroup .detail p {
+  text-align: left;
+  padding: 0 0.25em;
+}
+
+/*css3添加的动态效果*/
+.artGroup.flip {
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+.artGroup.flip .artwork {
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.artGroup.flip .detail,
+.artGroup.flip .theFlip {
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+
+.artGroup.flip img,
+.artGroup.flip .detail {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.type-it-3,.type-it-4{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Microsoft YaHei",montserrat;
+}
